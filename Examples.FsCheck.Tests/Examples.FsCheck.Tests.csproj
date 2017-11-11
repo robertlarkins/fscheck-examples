@@ -1,14 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>    
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FsCheck.Xunit" Version="2.9.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170601-03" />
-    <PackageReference Include="xunit" Version="2.3.0-beta3-build3705" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta3-build3705" />
+    <PackageReference Include="FluentAssertions" Version="5.0.0-beta0003" />
+    <PackageReference Include="FluentAssertions.BestPractices" Version="0.5.0" />
+    <PackageReference Include="FsCheck.Xunit" Version="3.0.0-alpha2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0-preview-20171012-09" />
+    <PackageReference Include="xunit" Version="2.3.1-rc2-build3844" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1-rc2-build3844" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Examples.FsCheck\Examples.FsCheck.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
   </ItemGroup>
 
 </Project>
